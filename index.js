@@ -8,4 +8,12 @@ for (let x = 0; x < length.x; x++) {
 	}
 	dots[x] = otherArray; // add the y array to the x array.
 }
-console.log(dots);
+
+addDot = (x, y) => {
+	// used to insert active dots
+	dots[x][y].active = true;
+};
+
+/* needs improvements but is what to be used when getting all active dots
+console.log(dots.map((x) => x.map((y) => y.active).filter((y) => y == true)).filter((x) => x.some((y) => y == true))); 
+*/
